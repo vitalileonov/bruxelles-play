@@ -1,52 +1,212 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FUCKING IN BRUXELLES</title>
   <style>
     body {
-      margin: 0;
-      font-family: sans-serif;
-      background-color: #111;
-      color: #eee;
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #111;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    header, section, footer {
       padding: 20px;
+      max-width: 900px;
+      margin: auto;
     }
-    h1 {
-      color: #b80b9b;
+    h1, h2 {
+      color: #f58f8f;
     }
-    img {
-      max-width: 100%;
-      margin: 10px 0;
-      border-radius: 12px;
+    .lang-switch {
+      text-align: right;
+      padding: 10px 20px;
     }
-    .donate-button {
-      display: inline-block;
-      background-color: #ff0066;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
+    .lang-switch button {
+      background: transparent;
+      color: #f0f0f0;
+      border: 1px solid #f0f0f0;
+      padding: 5px 10px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .photos div {
+      background: #333;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      font-size: 14px;
+    }
+    .donate {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .donate a {
+      background: #f58f8f;
+      color: black;
+      padding: 12px 20px;
       text-decoration: none;
+      border-radius: 6px;
       font-weight: bold;
+    }
+    [lang="en"] {
+      display: none;
     }
   </style>
 </head>
 <body>
-  <h1>FUCKING IN BRUXELLES</h1>
-  <p>Премьера спектакля состоится осенью 2025 года в Вильнюсе. Режиссер — Агнюс Янкявичюс.</p>
-  <p>Это история белоруса, вынужденного бежать от преследований властей. В его сердце — желание наказать Европарламент. Но чем всё это закончится — узнает зритель.</p>
+  <div class="lang-switch">
+    <button onclick="setLang('ru')">RU</button>
+    <button onclick="setLang('en')">EN</button>
+  </div>
 
-  <h2>Фотографии</h2>
-  <p>(Здесь будут фото — пока вставь временные заглушки или оставь место)</p>
-  <img src="https://via.placeholder.com/600x400" alt="Фото 1">
-  <img src="https://via.placeholder.com/600x400" alt="Фото 2">
-  <img src="https://via.placeholder.com/600x400" alt="Фото 3">
-  <img src="https://via.placeholder.com/600x400" alt="Фото 4">
-  <img src="https://via.placeholder.com/600x400" alt="Фото 5">
-  <img src="https://via.placeholder.com/600x400" alt="Фото 6">
+  <!-- RUSSIAN VERSION -->
+  <div lang="ru">
+    <header>
+      <h1>FUCKING IN BRUXELLES — независимая театральная постановка</h1>
+      <p>🎭 Современный спектакль о свободе, жажде справедливости и одиночестве в Европе</p>
+    </header>
 
-  <h2>Поддержать проект</h2>
-  <p>Вы можете сделать донат для поддержки постановки.</p>
-  <a href="donate.html" class="donate-button">Сделать донат</a>
+    <section>
+      <h2>📖 О проекте</h2>
+      <p>«FUCKING IN BRUXELLES» — театральная постановка на стыке документального театра, поэзии и психоделического видеоарта. По пьесе Микиты Ильинчика, в постановке режиссёра Агнюса Янкявичюса (Литва). Это история белоруса, вынужденного бежать из страны из-за преследований. Его цель — наказать Европарламент. Но чем всё закончится — решит не он. Это увидит зритель.</p>
+    </section>
+
+    <section>
+      <h2>🎯 Цели</h2>
+      <ul>
+        <li>Поставить острый, честный, социальный спектакль</li>
+        <li>Объединить белорусских и литовских актёров и художников</li>
+        <li>Создать видеоверсию для онлайн-просмотра</li>
+        <li>Дать сцену тем, чьи голоса не слышны</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💰 На что пойдут средства</h2>
+      <ul>
+        <li>Репетиции и гонорары</li>
+        <li>Костюмы, свет, сценография</li>
+        <li>Оригинальная музыка</li>
+        <li>Аренда площадки в Вильнюсе</li>
+        <li>Съёмка и монтаж</li>
+        <li>Продвижение проекта</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎁 Награды</h2>
+      <ul>
+        <li>€5 — Благодарность + имя в титрах</li>
+        <li>€15 — Доступ к онлайн-версии</li>
+        <li>€30 — Афиша + открытка</li>
+        <li>€50 — Онлайн-премьера + мерч</li>
+        <li>€100 — Приглашение на премьеру + афиша с автографами</li>
+        <li>€250+ — Статус сопродюсера + закулисье</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📍 Премьера</h2>
+      <p>Осень 2025 года, Вильнюс, Литва. Все поддержавшие получат ссылку на видеоверсию спектакля.</p>
+    </section>
+
+    <section class="photos">
+      <div>ФОТО 1</div>
+      <div>ФОТО 2</div>
+      <div>ФОТО 3</div>
+      <div>ФОТО 4</div>
+      <div>ФОТО 5</div>
+      <div>ФОТО 6</div>
+    </section>
+
+    <div class="donate">
+      <a href="donate.html">Поддержать проект</a>
+    </div>
+  </div>
+
+  <!-- ENGLISH VERSION -->
+  <div lang="en">
+    <header>
+      <h1>FUCKING IN BRUXELLES — Independent Theater Production</h1>
+      <p>🎭 A modern play about freedom, justice, and loneliness in Europe</p>
+    </header>
+
+    <section>
+      <h2>📖 About</h2>
+      <p>“FUCKING IN BRUXELLES” is a blend of documentary theater, poetry, and psychedelic video art. Based on the play by Mikita Ilyinchyk, directed by Agnius Jankevicius (Lithuania). It tells the story of a Belarusian man forced to flee his country due to political persecution. His mission — to punish the European Parliament. But what comes of it… only the audience will know.</p>
+    </section>
+
+    <section>
+      <h2>🎯 Goals</h2>
+      <ul>
+        <li>Produce a bold and honest play</li>
+        <li>Unite Belarusian and Lithuanian artists</li>
+        <li>Create a filmed version for online viewing</li>
+        <li>Give voice to the unheard</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💰 Budget</h2>
+      <ul>
+        <li>Rehearsals and fees</li>
+        <li>Stage, costumes, lighting</li>
+        <li>Original sound and music</li>
+        <li>Venue rental in Vilnius</li>
+        <li>Filming and editing</li>
+        <li>Promotion</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🎁 Rewards</h2>
+      <ul>
+        <li>€5 — Thanks + name in credits</li>
+        <li>€15 — Online access</li>
+        <li>€30 — Poster + postcard from Vilnius</li>
+        <li>€50 — Online premiere + merch</li>
+        <li>€100 — Invitation to live premiere + signed poster</li>
+        <li>€250+ — Co-producer status + behind-the-scenes content</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📍 Premiere</h2>
+      <p>Fall 2025, Vilnius, Lithuania. All supporters will receive access to the online version.</p>
+    </section>
+
+    <section class="photos">
+      <div>PHOTO 1</div>
+      <div>PHOTO 2</div>
+      <div>PHOTO 3</div>
+      <div>PHOTO 4</div>
+      <div>PHOTO 5</div>
+      <div>PHOTO 6</div>
+    </section>
+
+    <div class="donate">
+      <a href="donate.html">Support the project</a>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[lang]').forEach(el => {
+        el.style.display = el.getAttribute('lang') === lang ? 'block' : 'none';
+      });
+    }
+    setLang('ru'); // Default language
+  </script>
 </body>
 </html>
