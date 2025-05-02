@@ -44,8 +44,13 @@
       document.querySelectorAll('[lang]').forEach(el => {
         el.style.display = el.getAttribute('lang') === lang ? 'block' : 'none';
       });
+      localStorage.setItem('lang', lang); // Сохраняем язык
     }
-    setLang('ru');
+  
+    // Загружаем язык из localStorage или по умолчанию ставим русский
+    const savedLang = localStorage.getItem('lang') || 'ru';
+    setLang(savedLang);
   </script>
+  
 </body>
 </html>
