@@ -1,116 +1,48 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0; padding: 0;
-    background: #111;
-    color: #f0f0f0;
-    line-height: 1.6;
-  }
-  
-  header, section, footer {
-    padding: 20px;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  h1, h2 {
-    color: #f58f8f;
-  }
-  
-  .lang-switch {
-    text-align: right;
-    padding: 10px 20px;
-  }
-  
-  .lang-switch button {
-    background: transparent;
-    color: #f0f0f0;
-    border: 1px solid #f0f0f0;
-    padding: 5px 10px;
-    margin-left: 5px;
-    cursor: pointer;
-  }
-  
-  .photos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 10px;
-    margin: 20px 0;
-  }
-  
-  .photos div {
-    background: #333;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #777;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+h1, h2 {
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+a, button {
+  background: transparent;
+  color: #0ff;
+  border: 1px solid #0ff;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover, button:hover {
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  background-color: rgba(0, 255, 255, 0.1);
+}
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+.photos div {
+  background: #111;
+  border: 1px solid #0ff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 0 5px #0ff;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
     font-size: 14px;
   }
-  
-  .donate {
-    text-align: center;
-    margin-top: 30px;
+  .photos div {
+    height: 80px;
   }
-  
-  .donate a {
-    background: #f58f8f;
-    color: black;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-  }
-  
-  [lang="en"] {
-    display: none;
-  }
-  
-  /* 📱 Мобильные устройства (до 767px) */
-  @media screen and (max-width: 767px) {
-    body {
-      font-size: 16px;
-      padding: 10px;
-    }
-  
-    header, section, footer {
-      padding: 10px;
-    }
-  
-    h1 {
-      font-size: 1.5em;
-    }
-  
-    .photos div {
-      height: 150px;
-    }
-  
-    .donate a {
-      padding: 10px 16px;
-      font-size: 16px;
-    }
-  
-    .lang-switch {
-      text-align: center;
-      padding: 10px;
-    }
-  
-    .lang-switch button {
-      margin: 0 5px;
-    }
-  }
-  
-  /* 💻 Планшеты (768px – 1024px) */
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-      font-size: 18px;
-    }
-  
-    h1 {
-      font-size: 2em;
-    }
-  
-    .photos div {
-      height: 180px;
-    }
-  }
-  
+}
