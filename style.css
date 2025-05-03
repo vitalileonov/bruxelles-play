@@ -65,7 +65,7 @@ a:hover {
 /* Main Content */
 .content {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -141,7 +141,7 @@ li {
 
 .main-title {
   width: 100%;
-  font-size: 6vw; /* масштабируется относительно ширины экрана */
+  font-size: 4vw; /* масштабируется относительно ширины экрана */
   text-transform: uppercase;
   text-align: center;
   margin: 20px 0;
