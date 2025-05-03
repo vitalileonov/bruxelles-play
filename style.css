@@ -162,3 +162,32 @@ li {
     font-size: 12vw;
   }
 }
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* расстояние между изображениями */
+  margin: 40px 0;
+}
+
+.gallery-image {
+  width: 22%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* 📱 Медиа-запрос для планшетов */
+@media (max-width: 768px) {
+  .gallery-image {
+    width: 45%;
+  }
+}
+
+/* 📱 Медиа-запрос для мобильных телефонов */
+@media (max-width: 480px) {
+  .gallery-image {
+    width: 90%;
+  }
+}
