@@ -246,3 +246,58 @@ li {
     word-break: break-all;
   }
 }
+
+/* блок наград */
+
+.rewards {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.rewards h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.reward-tier {
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.reward-tier h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.reward-tier ul {
+  padding-left: 1.2rem;
+}
+
+.reward-tier li {
+  margin-bottom: 0.5rem;
+}
+
+/* Адаптация под мобильные устройства */
+@media screen and (max-width: 600px) {
+  .rewards {
+    padding: 1rem;
+  }
+
+  .reward-tier {
+    padding: 1rem;
+  }
+
+  .rewards h2 {
+    font-size: 1.5rem;
+  }
+
+  .reward-tier h3 {
+    font-size: 1rem;
+  }
+}
