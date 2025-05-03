@@ -167,7 +167,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* расстояние между изображениями */
+  gap: 30px; /* расстояние между изображениями */
   margin: 40px 0;
 }
 
