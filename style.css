@@ -309,3 +309,9 @@ li {
   background-color: #121212; /* опционально */
   color: #7b178f;
 }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
