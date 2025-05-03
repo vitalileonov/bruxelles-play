@@ -192,12 +192,14 @@ li {
   }
 }
 
+/* block donate */
+
 .support-section {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
   text-align: left;
-  background-color: #f9f9f9;
+  background-color: #1f1d1d;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
@@ -221,7 +223,7 @@ li {
 
 .support-details {
   font-family: monospace;
-  background: #eeeeee;
+  background: #121212;
   padding: 8px 12px;
   border-radius: 6px;
   margin: 5px 0;
