@@ -301,3 +301,11 @@ li {
     font-size: 1rem;
   }
 }
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-family: sans-serif;
+  background-color: #f7f7f7; /* опционально */
+  color: #333;
+}
