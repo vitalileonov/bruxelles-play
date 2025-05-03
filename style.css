@@ -136,3 +136,29 @@ li {
     font-size: 0.9rem;
   }
 }
+
+/* название на экранах */
+
+.main-title {
+  width: 100%;
+  font-size: 6vw; /* масштабируется относительно ширины экрана */
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* 📱 Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 10vw;
+    padding: 0 10px;
+  }
+}
+
+/* 📱 Медиа-запрос для очень маленьких экранов */
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 12vw;
+  }
+}
