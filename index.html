@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FUCKING IN BRUXELLES</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="lang-switch">
-    <button onclick="setLang('ru')">RU</button>
-    <button onclick="setLang('en')">EN</button>
-  </div>
-  <div lang="ru">
-    <header>
-      <h1>FUCKING IN BRUXELLES — независимая театральная постановка</h1>
-      <p>🎭 Современный спектакль о свободе, жажде справедливости и одиночестве в Европе</p>
-    </header>
+  <header class="site-header">
+    <h1>FUCKING IN BRUXELLES</h1>
+    <nav>
+      <a href="index.html">RU</a>
+      <a href="index-en.html">EN</a>
+    </nav>
+  </header>
+
+  <main class="content">
     <section>
-      <h2>📖 О проекте</h2>
-      <p>«FUCKING IN BRUXELLES» — театральная постановка на стыке документального театра, поэзии и психоделического видеоарта...</p>
+      <h2>О проекте</h2>
+      <p><strong>FUCKING IN BRUXELLES</strong> — независимая театральная постановка на стыке документального перформанса, поэзии и видеоарта. Спектакль создан по пьесе Микиты Ильинчика, литовский режиссёр Агнюс Янкявичюс.</p>
+      <p>Главный герой — участник протестов в Беларуси, вынужденный бежать из страны из-за политических преследований. Он поселился прямо напротив Европейского парламента — чтобы <em>наказать его</em> за равнодушие. Эта постановка — его исповедь, манифест и акт сопротивления.</p>
     </section>
-    <section class="photos">
-      <div>ФОТО 1</div><div>ФОТО 2</div><div>ФОТО 3</div><div>ФОТО 4</div><div>ФОТО 5</div><div>ФОТО 6</div>
-    </section>
-    <div class="donate"><a href="donate.html">Поддержать проект</a></div>
-  </div>
-  <div lang="en">
-    <header>
-      <h1>FUCKING IN BRUXELLES — Independent Theater Production</h1>
-      <p>🎭 A modern play about freedom, justice, and loneliness in Europe</p>
-    </header>
+
     <section>
-      <h2>📖 About</h2>
-      <p>“FUCKING IN BRUXELLES” is a blend of documentary theater, poetry, and psychedelic video art...</p>
+      <h2>Цель кампании</h2>
+      <ul>
+        <li>Создание спектакля и его видеоверсии</li>
+        <li>Объединение белорусских и литовских артистов</li>
+        <li>Проведение премьеры в Вильнюсе</li>
+        <li>Поддержка голосов, которых не слышат</li>
+      </ul>
     </section>
-    <section class="photos">
-      <div>PHOTO 1</div><div>PHOTO 2</div><div>PHOTO 3</div><div>PHOTO 4</div><div>PHOTO 5</div><div>PHOTO 6</div>
+
+    <section>
+      <h2>Как используются средства</h2>
+      <ul>
+        <li>Гонорары актёрам и команде</li>
+        <li>Аренда репетиционной и театральной площадки</li>
+        <li>Постановочные расходы: костюмы, сценография, техника</li>
+        <li>Съёмка и монтаж видеоверсии</li>
+        <li>Продвижение проекта</li>
+      </ul>
     </section>
-    <div class="donate"><a href="donate.html">Support the project</a></div>
-  </div>
-  <script>
-    function setLang(lang) {
-      document.querySelectorAll('[lang]').forEach(el => {
-        el.style.display = el.getAttribute('lang') === lang ? 'block' : 'none';
-      });
-      localStorage.setItem('lang', lang); // Сохраняем язык
-    }
-  
-    // Загружаем язык из localStorage или по умолчанию ставим русский
-    const savedLang = localStorage.getItem('lang') || 'ru';
-    setLang(savedLang);
-  </script>
-  
+
+    <section>
+      <h2>Поддержите нас</h2>
+      <p>Каждое ваше пожертвование помогает сделать этот проект реальностью. Примите участие в создании спектакля, который говорит правду.</p>
+      <a class="donate-button" href="donate.html">ПОДДЕРЖАТЬ</a>
+    </section>
+  </main>
 </body>
 </html>
